@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./Asset/Style/Style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>Home</title>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="logo-nav-bar">
+            <img src="./Asset/HomePage/logo-nav-bar.png" alt="logo">
+        </div>
+        <div class="link-menu">
+            <a href="./indexLogin.html">Home</a>
+            <a href="./ViewAll.html">List Movie</a>
+        </div>
+        <div class="search-nav-bar">
+            <i data-feather="search"></i>
+        </div>
+        <div class="picture-nav-bar">
+            <img src="./Asset/HomePage/profil-nav-bar.png" alt="profil">
+        </div>        
+    </nav>
+    <main class="main-overlay right-more">
+        <div class="left-than-right">
+            <section class="overlay-left">
+                <div class="tab-page overlay-white">
+                    <a href="./ProfilPage.html">
+                        <div class="tab-page-profil active-tab">Account Settings</div>
+                    </a>
+                    <a href="./OrderHistoryPage.html">
+                        <div class="tab-page-profil">Order History</div>
+                    </a>
+               </div>
+               <div>
+                    <form>
+                        <div class="information-account overlay-white">
+                            <div>Details Information</div>
+                            <div class="br-full"></div>
+                            <div class="overlay-details-information">
+                                <div class="details-information">
+                                    <div>
+                                        <label for="fistName">First Name</label>
+                                        <input type="text" name="fistName" id="fistName" placeholder="Write your first name">
+                                    </div>
+                                    <div>
+                                        <label for="lastName">last Name</label>
+                                        <input type="text" name="lastName" id="lastName" placeholder="Write your last name">
+                                    </div>
+                                </div>
+                                <div class="details-information">                        
+                                    <div>
+                                        <label for="email">Email</label>
+                                        <input type="text" name="email" id="email" placeholder="Write your email">
+                                    </div>
+                                    <div>
+                                        <label for="phone">Phone Number</label>
+                                        <input type="text" name="phone" id="phone" placeholder="Write your phone number">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <button class="update-details-information">Update changes</button>
+                        </div>
+                    </form>                
+               </div>
+               <div>
+                    <form>
+                        <div class="information-account overlay-white">
+                            <div>Account and Privacy</div>
+                            <div class="br-full"></div>
+                            <div class="overlay-details-information">
+                                <div class="details-information">
+                                    <div>
+                                        <label for="newpassword">New Password</label>
+                                        <input type="password" name="newpassword" id="newpassword" placeholder="Write your password">
+                                    </div>
+                                    <div>
+                                        <label for="confirmpassword">Confirm Password</label>
+                                        <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirm your password">
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="">
+                            <button class="update-details-information">Update changes</button>
+                        </div>
+                    </form>                
+               </div>
+            </section>
+        </div>
+        <div class="right-than-left right-more">
+            <section class="overlay-right">                
+                <div class="side-profil overlay-white-br">
+                    <div>INFO</div>
+                    <div class="profil-info">
+                        <div>
+                            <img src="./Asset/HomePage/profil-nav-bar.png" alt="profil">
+                        </div>
+                        <div>Jonas El Rodriguez</div>
+                        <div>Moviegoers</div>
+                    </div>
+                    <div class="br-full"></div>
+                    <div class="profil-btn-logout">
+                        <div>
+                            <button class="btn-logout">Logout</button>
+                        </div>
+                    </div>
+                </div>                    
+            </section>
+            </div>
+        </div>
+
+    </main>
+    
+    <footer class="footer-overlay">
+        <div>
+            <section class="footer-section-one">
+                <div>
+                    <img src="./Asset/HomePage/logo-nav-bar.png" alt="footer logo">
+                </div>
+                <p>Stop waiting in line. Buy tickets</p>
+                <p>conveniently, watch movies quietly.</p>
+            </section>
+            <section class="footer-section-two">
+                <h6>Explore</h6>
+                <p>Home</p>
+                <p>List Movie</p>
+            </section>
+            <section class="footer-section-three">
+                <h6>Our Sponsor</h6>                
+                <div>
+                    <img src="./Asset/HomePage/logo-ebuid.png" alt="ebuid">
+                </div>
+                <div>
+                    <img src="./Asset/HomePage/logo-cineone21.png" alt="cineone21">
+                </div>
+                <div>
+                    <img src="./Asset/HomePage/logo-hiflix.png" alt="hiflix">
+                </div>
+            </section>
+            <section class="footer-section-four">
+                <h6>Follow us</h6>                
+                <div>
+                    <i data-feather="facebook"></i>
+                    <span>Tickitz Cinema id</span>
+                </div>
+                <div>
+                    <i data-feather="instagram"></i>
+                    <span>tickitz.id</span>
+                </div>
+                <div>
+                    <i data-feather="twitter"></i>
+                    <span>tickitz.id</span>
+                </div>
+                <div>
+                    <i data-feather="youtube"></i>
+                    <span>Tickitz Cinema id</span>
+                </div>
+            </section>
+        </div>
+        <div class="footer-copyright">
+            <span>© 2020 Tickitz. All Rights Reserved.</span>
+        </div>
+    </footer>
+    
+</body>
+<script>
+    feather.replace()
+</script>
+</html>

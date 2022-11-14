@@ -61,6 +61,17 @@ body{
     margin-bottom: 38px;
 }
 
+#notif-signup{
+    background-color: #FA8072;
+    color: #8B0000;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 10px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    display: none;
+}
+
 .form-sign div h3{
     margin:0;
     font-family: 'Inter';
@@ -83,6 +94,8 @@ body{
     letter-spacing: 0.007em;
     color: #AAAAAA;
 }
+
+
 
 .form-sign form{
     margin-bottom: 32px;
@@ -1584,4 +1597,23 @@ body{
     align-items: center;
     display: flex;
     flex: 1;
+}
+
+
+
+
+@media (max-width: 425px){
+    .left-side{
+        display: none;
+    }
+
+    .form-sign{
+        flex: 1;
+    }
+}
+
+@media (max-width: 859px){
+    .warp .overlay div {
+        text-align: center;
+    }
 }

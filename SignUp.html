@@ -16,11 +16,12 @@
             </div>
         </section>
         <section class="form-sign">
-            <div>
+            <div id="notice-form-head">
                 <h3 class=>Sign Up</h3>
                 <p>Fill your additional details</p>
+                <div id="notif-signup">Please input all item</div>
             </div>
-            <form>
+            <form id="form-signup" >
                 <div>
                     <label for="fistName">First Name</label>
                     <input type="text" name="fistName" id="fistName" placeholder="Write your first name">
@@ -41,10 +42,9 @@
                     <label for="password">Password</label>
                     <input type="password" name="password" id="password" placeholder="Write your password">
                 </div>
-                <a href="./index.html">
-                    <button class="button-submit">Sign Up</button>
-
-                </a>
+                <!-- <a href="./index.html"> -->
+                    <button class="button-submit" type="submit">Sign Up</button>
+                <!-- </a> -->
             </form>
             <div class="help-sign">
                 <span>Already have account ?</span>
@@ -53,4 +53,38 @@
         </section>
     </main>
 </body>
+<script>
+    const notif = document.getElementById("notice-form-head");
+    const formSignUp = document.getElementById("form-signup");
+
+    const fistName = document.getElementById("fistName");
+    const lastName = document.getElementById("lastName");
+    const phone = document.getElementById("phone");
+    const email = document.getElementById("email");
+    const password = document.getElementById("password");
+    const alerta = document.getElementById("notif-signup");
+
+    // let alerta = document.getElementsByClassName("notif-signup");
+
+
+    formSignUp.addEventListener('submit', validationLogin)
+
+    function validationLogin(event) {
+        if (!fistName.value || !lastName.value || !phone.value || !email.value || !password.value  ){
+            alerta.style.display = "block";
+            // alerta.style.display = "block" ? "none" : "block";
+        } 
+        else{
+             alerta.style.display = "none";
+        }
+        
+        // notif.append("please input all item")
+
+        // alerta.style.backgroundColor = "red";
+
+        event.preventDefault();
+    }
+    
+
+</script>
 </html>

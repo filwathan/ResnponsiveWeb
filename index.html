@@ -86,47 +86,10 @@
             <button class="btn-month">July</button>
             <button class="btn-month">august</button>
         </div>
-        <div class="upcoming-list">
-            <div>
-                <img src="./Asset/HomePage/black-widow.png" alt="Black Widow">
-                <h4>Black Widow</h4>
-                <p>Action, Adventure, Sci-Fi</p>
-                <a href="./MovieDetails.html">
-                    <button>Details</button>
-                </a>
-            </div>
-            <div>
-                <img src="./Asset/HomePage/the-witches.png" alt="The Witchec">
-                <h4>The Witchec</h4>
-                <p>Adventure, Comedy, Family</p>
-                <a href="./MovieDetails.html">
-                    <button>Details</button>
-                </a>
-            </div>
-            <div>
-                <img src="./Asset/HomePage/tenet.png" alt="Tenet">
-                <h4>Tenet</h4>
-                <p>Action, Sci-Fi</p>
-                <a href="./MovieDetails.html">
-                    <button>Details</button>
-                </a>
-            </div>
-            <div>
-                <img src="./Asset/HomePage/black-widow.png" alt="Black Widow">
-                <h4>Black Widow</h4>
-                <p>Action, Adventure, Sci-Fi</p>
-                <a href="./MovieDetails.html">
-                    <button>Details</button>
-                </a>
-            </div>
-            <div>
-                <img src="./Asset/HomePage/the-witches.png" alt="The Witchec">
-                <h4>The Witchec</h4>
-                <p>Adventure, Comedy, Family</p>
-                <a href="./MovieDetails.html">
-                    <button>Details</button>
-                </a>
-            </div>               
+
+        <div id="warp-upcoming-list" class="upcoming-list">
+            <!-- array upcomingMovies -->
+
         </div>
     </main>
     <main class="join-member">
@@ -201,5 +164,73 @@
 </body>
 <script>
     feather.replace()
+
+    const upcomingMovies = [
+        {
+            gambar: "./Asset/HomePage/black-widow.png",
+            judul: "Black Widow",
+            aliran: "Action, Adventure, Sci-Fi",
+            detail: "./MovieDetails.html"
+        },
+        {
+            gambar: "./Asset/HomePage/the-witches.png",
+            judul: "The Witches",
+            aliran: "Adventure, Comedy, Family",
+            detail: "./MovieDetails.html"
+        },
+        {
+            gambar: "./Asset/HomePage/tenet.png",
+            judul: "Tenet",
+            aliran: "Action, Sci-Fi",
+            detail: "./MovieDetails.html"
+        },
+        {
+            gambar: "./Asset/HomePage/black-widow.png",
+            judul: "Black Widow",
+            aliran: "Action, Adventure, Sci-Fi",
+            detail: "./MovieDetails.html"
+        },
+        {
+            gambar: "./Asset/HomePage/the-witches.png",
+            judul: "The Witches",
+            aliran: "Adventure, Comedy, Family",
+            detail: "./MovieDetails.html"
+        },
+    ];
+
+    upcomingMovies.forEach((item) => {
+
+        const warp = document.getElementById("warp-upcoming-list");
+
+        const divChildWarp = document.createElement("div");
+        warp.appendChild(divChildWarp);
+
+        const image = document.createElement("img");
+        image.src = item.gambar;
+        image.alt = "Black Sabat";
+        divChildWarp.appendChild(image);
+
+        const title = document.createElement("h4");
+        title.textContent = item.judul;
+        divChildWarp.appendChild(title);
+
+        const genre = document.createElement("p");
+        genre.textContent = item.aliran;
+        divChildWarp.appendChild(genre);
+
+        const btnDetail = document.createElement("button");
+        btnDetail.textContent = "Detail";
+        btnDetail.setAttribute('onclick', "btnDetailsClick()");
+        
+        divChildWarp.appendChild(btnDetail);
+    });
+
+    function btnDetailsClick(){
+        window.location.assign("./MovieDetails.html");
+    };
+
+    
+
+
 </script>
 </html>

@@ -42,7 +42,7 @@
                 <span>Now Showing</span>
             </div>
             <div>
-                <a href="#">view all</a>
+                <a href="./ViewAll.html">view all</a>
             </div>
         </div>
         <div class="product-list">
@@ -69,7 +69,7 @@
                 <span>Upcoming Movies</span>
             </div>
             <div>
-                <a href="#">view all</a>
+                <a href="./ViewAll.html">view all</a>
             </div>
         </div>
         <div class="month">
@@ -164,73 +164,6 @@
 </body>
 <script>
     feather.replace()
-
-    const upcomingMovies = [
-        {
-            gambar: "./Asset/HomePage/black-widow.png",
-            judul: "Black Widow",
-            aliran: "Action, Adventure, Sci-Fi",
-            detail: "./MovieDetails.html"
-        },
-        {
-            gambar: "./Asset/HomePage/the-witches.png",
-            judul: "The Witches",
-            aliran: "Adventure, Comedy, Family",
-            detail: "./MovieDetails.html"
-        },
-        {
-            gambar: "./Asset/HomePage/tenet.png",
-            judul: "Tenet",
-            aliran: "Action, Sci-Fi",
-            detail: "./MovieDetails.html"
-        },
-        {
-            gambar: "./Asset/HomePage/black-widow.png",
-            judul: "Black Widow",
-            aliran: "Action, Adventure, Sci-Fi",
-            detail: "./MovieDetails.html"
-        },
-        {
-            gambar: "./Asset/HomePage/the-witches.png",
-            judul: "The Witches",
-            aliran: "Adventure, Comedy, Family",
-            detail: "./MovieDetails.html"
-        },
-    ];
-
-    upcomingMovies.forEach((item) => {
-
-        const warp = document.getElementById("warp-upcoming-list");
-
-        const divChildWarp = document.createElement("div");
-        warp.appendChild(divChildWarp);
-
-        const image = document.createElement("img");
-        image.src = item.gambar;
-        image.alt = "Black Sabat";
-        divChildWarp.appendChild(image);
-
-        const title = document.createElement("h4");
-        title.textContent = item.judul;
-        divChildWarp.appendChild(title);
-
-        const genre = document.createElement("p");
-        genre.textContent = item.aliran;
-        divChildWarp.appendChild(genre);
-
-        const btnDetail = document.createElement("button");
-        btnDetail.textContent = "Detail";
-        btnDetail.setAttribute('onclick', "btnDetailsClick()");
-        
-        divChildWarp.appendChild(btnDetail);
-    });
-
-    function btnDetailsClick(){
-        window.location.assign("./MovieDetails.html");
-    };
-
-    
-
-
 </script>
+<script src="./Javascript.js"></script>
 </html>

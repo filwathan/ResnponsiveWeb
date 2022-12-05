@@ -21,7 +21,7 @@
                 <p>Sign in with your data that you entered during your registration</p>
                 <div id="notif-signup">Email or Password is wrong</div>
             </div>
-            <form id="form-signup" >
+            <form id="form-signup">
                 <div>
                     <label for="email">Email</label>
                     <input type="text" name="email" id="email" placeholder="Write your email">
@@ -48,34 +48,5 @@
         </section>
     </main>
 </body>
-<script>
-    const notif = document.getElementById("notice-form-head");
-    const formSignUp = document.getElementById("form-signup");
-    const alerta = document.getElementById("notif-signup");
-
-    const email = document.getElementById("email");
-    const password = document.getElementById("password");
-
-    // let alerta = document.getElementsByClassName("notif-signup");
-
-
-    formSignUp.addEventListener('submit', validationLogin)
-
-    function validationLogin(event) {
-        if (email.value !== "admin@mail.com" || password.value !== "super" ){
-            alerta.style.display = "block";
-            // alerta.style.display = "block" ? "none" : "block";
-        } 
-        else{
-             alerta.style.display = "none";
-        }
-        
-        // notif.append("please input all item")
-
-        // alerta.style.backgroundColor = "red";
-
-        event.preventDefault();
-    }
-    
-</script>
+<script src="./Javascript.js"></script>
 </html>

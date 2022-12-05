@@ -447,6 +447,7 @@ body{
 }
 
 .upcoming-list div{
+    width: 150PX;
     display: flex;
     flex-direction: column;
     padding: 32px;
@@ -485,7 +486,7 @@ body{
 .upcoming-list button{
     border: 1px solid #5F2EEA;
     border-radius: 4px;
-    width: 159px;
+    width: 100%;
     height: 33px;
     font-family: 'Mulish';
     font-style: normal;
